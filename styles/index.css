@@ -136,7 +136,61 @@ main > section {
 }
 
 /* Features you will love & enjoy section */
+.enjoy-container {
+  gap: 146px;
+}
 
+.enjoy-box {
+  max-width: 586px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.enjoy-heading {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #131313;
+  border-left: 5px solid #ff900e;
+  padding-left: 10px;
+  margin-bottom: 24px;
+}
+.enjoy-pra {
+  margin-bottom: 30px;
+}
+
+.enjoy-card-box {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enjoy-card {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.enjoy-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #131313;
+}
+
+.enjoy-img img {
+  width: 100%;
+}
+
+.enjoy-btn {
+  padding: 46px 42px;
+  margin-left: -92px;
+  margin-top: -130px;
+}
+.enjoy-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.experience {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
 /* =====================
    Responsive Devices
 ===================== */
