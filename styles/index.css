@@ -417,6 +417,10 @@ footer {
   .sponsor-card-box {
     grid-template-columns: repeat(3, 1fr);
   }
+  footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .footer-container p {
     font-size: 0.6rem;
   }
