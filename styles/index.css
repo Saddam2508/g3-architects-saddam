@@ -6,10 +6,10 @@
 
 /* share styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -36,6 +36,10 @@
   border-radius: 8px;
   border: none;
   font-size: 1.25rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ff8f0e9c;
 }
 /* main styles */
 /* header section start (nav menu) */
@@ -63,6 +67,11 @@ nav {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 400;
+  padding: 10px;
+  border-radius: 8px;
+}
+.menu li a:hover {
+  background-color: rgba(255, 143, 14, 0.24);
 }
 
 /* header section start (Banner) */
@@ -220,6 +229,9 @@ main > section {
   padding: 45px 36px;
   gap: 5px;
 }
+.fact-card:hover {
+  background-color: #f0edea79;
+}
 .fact-card h3 {
   font-size: 2.75rem;
   font-weight: 600;
@@ -228,6 +240,48 @@ main > section {
 .fact-card h4 {
   font-size: 1rem;
   color: #727272;
+}
+
+/* Our Sponspors section*/
+.sponsor-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-content {
+  max-width: 542px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sponsor-content h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.sponsor-card-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 155px;
+  filter: grayscale(100%);
+}
+.sponsor-card-box img {
+  max-width: 100%;
+}
+/* footer section */
+footer {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.footer-container {
+  background-color: #fff4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 8px;
+}
+.footer-container p {
+  color: #424242;
 }
 /* =====================
    Responsive Devices
@@ -238,6 +292,9 @@ main > section {
 }
 /* Large Laptop */
 @media screen and (max-width: 1024px) {
+  .sponsor-card-box {
+    gap: 100px;
+  }
 }
 
 /* Tablet (Landscape) */
@@ -259,6 +316,12 @@ main > section {
 
   .fact-card-box {
     margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .sponsor-card-box {
+    gap: 60px;
   }
 }
 
@@ -301,6 +364,12 @@ main > section {
   .enjoy-btn {
     display: none;
   }
+  .sponsor-card-box {
+    gap: 30px;
+  }
+  .sponsor-content {
+    margin-bottom: 30px;
+  }
 }
 
 /* Mobile */
@@ -308,6 +377,10 @@ main > section {
   nav {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .menu li a {
+    font-size: 0.9rem;
   }
   .banner {
     margin-top: 40px;
@@ -330,6 +403,12 @@ main > section {
 
   .team-content {
     max-width: 600px;
+  }
+  .sponsor-card-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-container p {
+    font-size: 0.6rem;
   }
 }
 
