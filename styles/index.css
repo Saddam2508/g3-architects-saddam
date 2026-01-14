@@ -192,6 +192,43 @@ main > section {
   font-size: 1.75rem;
   font-weight: 500;
 }
+
+/* Some Facts section */
+
+.fact-content {
+  max-width: 542px;
+}
+.fact-content h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.fact-card-box {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fact-card {
+  border: 1px solid #ff900e;
+  max-width: 241px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 36px;
+  gap: 5px;
+}
+.fact-card h3 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #424242;
+}
+.fact-card h4 {
+  font-size: 1rem;
+  color: #727272;
+}
 /* =====================
    Responsive Devices
 ===================== */
@@ -218,6 +255,10 @@ main > section {
   }
   .enjoy-year {
     font-size: 3rem;
+  }
+
+  .fact-card-box {
+    margin-top: 60px;
   }
 }
 
